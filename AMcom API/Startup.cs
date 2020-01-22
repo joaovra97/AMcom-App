@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AMcom_API.Elastic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +27,8 @@ namespace AMcom_API
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllers();
+			services.Configure<ElasticConnectionSettings>(Configuration.GetSection("ElasticConnectionSettings"));
+			services.AddSingleton(typeof(ElasticClientProvider));
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
