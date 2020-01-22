@@ -7,3 +7,5 @@
 /.vs/AMcom-App/config
 /AMcom API/bin/Debug/netcoreapp3.1
 /AMcom API/obj
+/AMcom Models/bin/Debug/netcoreapp3.1
+/AMcom Models/obj

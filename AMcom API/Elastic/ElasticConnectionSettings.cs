@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace AMcom_API.Elastic
+﻿namespace AMcom_API.Elastic
 {
 	public class ElasticConnectionSettings
 	{
